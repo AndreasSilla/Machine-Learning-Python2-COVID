@@ -10,7 +10,7 @@ from toolbox_02450 import rlr_validate
 from sklearn.linear_model import LogisticRegression
 
 # Read relevant columns from data and filter out rows with nan values.
-data = pd.read_csv(r'covid.csv')
+data = pd.read_csv(r'covid-data.csv')
 data = data.drop_duplicates(subset='iso_code', keep = 'last')
 
 # We wish to predict deaths per million based on pop density, median age, develop index, diabetes prevalence
