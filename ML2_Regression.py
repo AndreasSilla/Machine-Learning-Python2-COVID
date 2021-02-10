@@ -19,7 +19,7 @@ from toolbox_02450 import train_neural_net, draw_neural_net
 import scipy.stats
 
 # Read relevant columns from data and filter out rows with nan values.
-data = pd.read_csv(r'C:\Users\Asger\Desktop\owid-covid-data.csv')
+data = pd.read_csv(r'covid-data.csv')
 data = data.drop_duplicates(subset='iso_code', keep = 'last')
 
 # We wish to predict deaths per million based on pop density, median age, develop index, diabetes prevalence
